@@ -16,7 +16,8 @@ export AWS_REGION=<region>
  ```
  ##### Step 2: Create Terraform Files
  Create Variables.tf file
- We’ll start by defining the variables to use in our configuration. Save the following in a variables.tf file.
+   
+   We’ll start by defining the variables to use in our configuration. Save the following in a variables.tf file.
  
  Create main.tf file
  
@@ -26,16 +27,19 @@ export AWS_REGION=<region>
  terraform init
  ```
  terraform init downloads plugins needed to execute config files.
+ 
  Next run the command:
  ```
  terraform plan
  ``` 
  terraform plan creates an execution plan, listing resources that will be created based on the Terraform file.
+ 
  Finally run the command:
  ```
  terraform apply -auto-approve
  ```
  terraform apply creates the resource infrastructure as defined in the Terraform file.
+ 
  ##### Step 4: Verify Jenkins Deployment
 
 SSH into your instance and run the following command to verify Jenkins has successfully been installed:
