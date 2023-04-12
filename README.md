@@ -16,6 +16,8 @@ export AWS_REGION=<region>
  ```
  ##### Step 2: Create Terraform Files
  Create Variables.tf file
+ We’ll start by defining the variables to use in our configuration. Save the following in a variables.tf file.
+ 
  Create main.tf file
  
  ##### Step 3: Deploy our Infrastructure
